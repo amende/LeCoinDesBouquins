@@ -1,82 +1,36 @@
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+
+
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
-    <h2>Essential Links</h2>
+    <p> Partagez vos livres avec votre famille, vos amis, et notre communauté ! </p>
+      <ul class="nav justify-content-center">
+  <li class="nav-item">
+    <a class="btn btn-secondary" href="#/connexion">Se connecter</a>
+  </li>
+  <li class="nav-item">
+    <a class="btn btn-secondary" href="#/signup">S'inscrire</a>
+  </li>
+</ul>
+<h2> Sélection de livres disponibles sur le site : </h2>
+  <p> SELECT title FROM livre ORDER BY note DESC :D </p>
+    <h2>Nos liens</h2>
     <ul>
       <li>
         <a
-          href="https://vuejs.org"
+          href="https://facebook.com/gabriel.michard"
           target="_blank"
         >
-          Core Docs
+          Notre Page Facebook
         </a>
       </li>
       <li>
         <a
-          href="https://forum.vuejs.org"
+          href="https://twitter.com/GabrielMaurin4"
           target="_blank"
         >
-          Forum
-        </a>
-      </li>
-      <li>
-        <a
-          href="https://chat.vuejs.org"
-          target="_blank"
-        >
-          Community Chat
-        </a>
-      </li>
-      <li>
-        <a
-          href="https://twitter.com/vuejs"
-          target="_blank"
-        >
-          Twitter
-        </a>
-      </li>
-      <br>
-      <li>
-        <a
-          href="http://vuejs-templates.github.io/webpack/"
-          target="_blank"
-        >
-          Docs for This Template
-        </a>
-      </li>
-    </ul>
-    <h2>Ecosystem</h2>
-    <ul>
-      <li>
-        <a
-          href="http://router.vuejs.org/"
-          target="_blank"
-        >
-          vue-router
-        </a>
-      </li>
-      <li>
-        <a
-          href="http://vuex.vuejs.org/"
-          target="_blank"
-        >
-          vuex
-        </a>
-      </li>
-      <li>
-        <a
-          href="http://vue-loader.vuejs.org/"
-          target="_blank"
-        >
-          vue-loader
-        </a>
-      </li>
-      <li>
-        <a
-          href="https://github.com/vuejs/awesome-vue"
-          target="_blank"
-        >
-          awesome-vue
+          Notre twitter
         </a>
       </li>
     </ul>
@@ -88,7 +42,7 @@ export default {
   name: 'HelloWorld',
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App'
+      msg: 'Bienvenue au coin des bouquins'
     }
   }
 }
@@ -108,6 +62,6 @@ li {
   margin: 0 10px;
 }
 a {
-  color: #42b983;
+  color: #00203FFF;
 }
 </style>
