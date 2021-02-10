@@ -1,4 +1,4 @@
-# lecoindesbouquins
+# LeCoinDesBouquins
 
 > Book sharing website
 

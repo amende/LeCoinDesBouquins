@@ -13,6 +13,14 @@ export default {
       counter: 1
     }
   },
-  methods: {nickel: function (event) { alert('NTM') }}
+  methods: {
+    nickel: function (event) {       
+      fetch("http://localhost:3000/bouton")
+      .then(response => response.json())
+      .then(result => {
+        this.counter = result.message;
+      });
+      }
+  }
 }
 </script>
