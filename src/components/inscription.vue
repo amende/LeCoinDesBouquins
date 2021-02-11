@@ -2,37 +2,37 @@
 <form>
   <div class="mb-3">
     <label for="exampleInputEmail1" class="form-label">Votre adresse mail :</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-    <div id="emailHelp" class="form-text">Nous ne divulguerons cette adresse à personne</div>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" v-model="email">
+    <div id="emailHelp" class="form-text">Nous ne divulguerons cette adresse à personne (inch allah)</div>
   </div>
   <div class="mb-3">
-    <label for="exampleInputPassword1" class="form-label">Votre mot de passe: </label>
-    <input type="password" class="form-control" id="exampleInputPassword1">
+    <label for="exampleInputPassword1" class="form-label">Votre mot de passe (lui non plus on le révèle pas): </label>
+    <input type="password" class="form-control" id="exampleInputPassword1" v-model="pwd">
   </div>
   <div class="mb-3 form-check">
     <input type="checkbox" class="form-check-input" id="exampleCheck1">
     <label class="form-check-label" for="exampleCheck1">cochez ici, ça ne sert à rien mais ça fait classe</label>
   </div>
-  <button type="submit" class="btn btn-primary">Je m'inscris !</button>
+  <b-button variant="primary" v-on:click="submit()">Je m'inscris !</b-button>
 </form>
 
 </template>
 
 <script>
+import {APIService} from '../router/APIService'
+const apiService = new APIService()
+
 export default {
-  name: 'test',
+  name: 'inscription',
   data () {
     return {
-      null: 0
+      email: '',
+      pwd: ''
     }
   },
   methods: {
-    nickel: function (event) {
-      fetch('http://localhost:3000/bouton')
-        .then(response => response.json())
-        .then(result => {
-          this.counter = result.message
-        })
+    submit () {
+      apiService.register(this.data)
     }
   }
 }
