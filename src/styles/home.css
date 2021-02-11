@@ -1,0 +1,20 @@
+.home .page-title h1{
+    font-size: 4rem;
+}
+
+.home .slogan {
+    position: relative;
+    text-align: center;
+}
+
+.home .slogan img {
+    opacity: 0.3;
+    max-height: 30rem;
+}
+
+.home .slogan h2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

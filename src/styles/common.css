@@ -1,0 +1,38 @@
+#app {
+    font-family: 'Avenir', Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    color: #2c3e50;
+    margin-top: 90px;
+  }
+
+:root {
+    --theme-dark-blue: #00203FFF;
+    --theme-green: #ADEFD1FF;
+}
+#main-navbar {
+    background-color: var(--theme-dark-blue);
+    position: fixed;
+    top: 0;
+    width: 100%
+}
+
+.thumbnail-logo {
+    max-width: 50px;
+    max-height: 50px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: white;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: green;
+}
+
+#main-navbar .btn-success {
+    background-color: green;
+    border-color: green;
+    margin-right: 15px;
+}
