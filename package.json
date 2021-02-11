@@ -19,6 +19,7 @@
     "express": "^4.17.1",
     "mysql": "^2.18.1",
     "vue": "^2.6.12",
+    "vue-multiselect": "^2.1.6",
     "vue-router": "^3.0.1"
   },
   "devDependencies": {

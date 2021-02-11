@@ -19,4 +19,5 @@ export default {
 <style>
 @import './styles/common.css';
 @import './styles/home.css';
+@import './styles/fun/search_bar.css';
 </style>
