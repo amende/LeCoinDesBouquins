@@ -11,6 +11,7 @@
         <b-navbar-nav>
             <b-nav-item href="/">Le Coin Bouquin</b-nav-item>
         </b-navbar-nav>
+        <b-button size="sm" variant="success" href="#/connexion" id="navbar-partage">Partager un livre</b-button>
 
         <!-- Right aligned nav items -->
         <b-navbar-nav class="ml-auto">

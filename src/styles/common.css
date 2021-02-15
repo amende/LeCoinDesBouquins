@@ -31,8 +31,16 @@
     color: green;
 }
 
-#main-navbar .btn-success {
+.btn-success {
     background-color: green;
     border-color: green;
     margin-right: 15px;
+}
+
+#navbar-partage {
+    margin-left: 5%;
+}
+
+.navbar-toggler {
+    background-color: green;
 }

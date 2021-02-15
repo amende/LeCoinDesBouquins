@@ -7,19 +7,27 @@
     <b-img :src="background_title" fluid></b-img>
     <h2>Découvrez de nouveaux livres, partagez les votres !</h2>
   </div>
-  <div class="book_search">
+  <div class="book-search">
+    <div>
+      <b-button variant="success">Partager un livre</b-button>
+    </div>
     <b-form>
-      <div class="special-search-bar">
-        <b-input type="search" name="search" required></b-input>
-        <b-button class="search-btn" type="submit"></b-button>
-      </div>
-      <div>
-        <label class="typo__label">Catégorie</label>
-        <multiselect v-model="value_categorie" :options="categories" placeholder="Choisir une catégorie">
-          <span slot="noResult">Oops! Pas de catégorie de ce nom !.</span>
+      <div class="search-fields">
+        <div class="special-search-bar">
+          <b-input type="search" name="search" placeholder="Quel livre cherchez-vous ?"></b-input>
+          <b-button class="search-btn" type="submit"></b-button>
+        </div>
+        <multiselect v-model="value_region" :options="regions" placeholder="Choisir une région" :select-label="'Choisir'" :deselect-label="'Supprimer'" :selected-label="'Choisi'" open-direction="bottom">
+          <span slot="noResult">Oops! Pas de région de ce nom !</span>
+        </multiselect>
+        <multiselect v-model="value_categorie" :options="categories" placeholder="Choisir une catégorie" :select-label="'Choisir'" :deselect-label="'Supprimer'" :selected-label="'Choisi'" open-direction="bottom">
+          <span slot="noResult">Oops! Pas de catégorie de ce nom !</span>
         </multiselect>
       </div>
     </b-form>
+    <div class="search-button">
+      <b-button variant="success" type="submit">Rechercher</b-button>
+    </div>
   </div>
   <div>
   <h2> Sélection de livres disponibles sur le site : </h2>
@@ -58,8 +66,10 @@ export default {
   data () {
     return {
       value_categorie: null,
+      value_region: null,
       background_title: backgroundTitle,
-      categories: ['bit', 'non pas ce type là', 'hahahaha']
+      categories: ['bit', 'non pas ce type là', 'hahahaha'],
+      regions: ['Ile-de-France', 'Noirmoutier', 'Malakoff', 'Cachan']
     }
   }
 }

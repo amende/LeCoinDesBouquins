@@ -20,13 +20,10 @@ input {
 	width: 3em;
 	height: 3em;
 }
-.special-search-bar input:invalid:not(:hover),
-.search-btn {
-	cursor: pointer;
-}
+
 .special-search-bar,
-.special-search-bar input:hover,
-.special-search-bar input:valid  {
+.special-search-bar input,
+.special-search-bar input  {
 	width: 100%;
 }
 .special-search-bar input:hover,
@@ -35,7 +32,6 @@ input {
 }
 .special-search-bar {
 	margin: auto;
-	padding: 1.5em;
 	justify-content: center;
 	max-width: 30em;
 }
@@ -53,8 +49,8 @@ input {
 .special-search-bar input::-webkit-search-decoration {
 	-webkit-appearance: none;
 }
-.special-search-bar input:hover,
-.special-search-bar input:valid {
+.special-search-bar input,
+.special-search-bar input {
 	background: #fff;
 	border-radius: 0.375em 0 0 0.375em;
 	box-shadow: 0 0 0 0.1em #d9d9d9 inset;
@@ -101,25 +97,25 @@ input {
 }
 
 /* Active state */
-.special-search-bar input:hover + .search-btn,
-.special-search-bar input:valid + .search-btn {
-	background: green;
+.special-search-bar input + .search-btn,
+.special-search-bar input + .search-btn {
+	background: var(--theme-dark-blue);
 	border-radius: 0 0.375em 0.375em 0;
 	transform: scale(1);
 }
-.special-search-bar input:hover + .search-btn:before, 
-.special-search-bar input:hover + .search-btn:after,
-.special-search-bar input:valid + .search-btn:before, 
-.special-search-bar input:valid + .search-btn:after {
+.special-search-bar input + .search-btn:before, 
+.special-search-bar input + .search-btn:after,
+.special-search-bar input + .search-btn:before, 
+.special-search-bar input + .search-btn:after {
 	opacity: 1;
 }
-.special-search-bar input:hover + .search-btn:hover,
-.special-search-bar input:valid + .search-btn:hover,
-.special-search-bar input:valid:not(:focus) + .search-btn:focus {
-	background: green;
+.special-search-bar input + .search-btn:hover,
+.special-search-bar input + .search-btn:hover,
+.special-search-bar input:not(:focus) + .search-btn {
+	background: var(--theme-dark-blue);
 }
-.special-search-bar input:hover + .search-btn:active,
-.special-search-bar input:valid + .search-btn:active {
+.special-search-bar input + .search-btn,
+.special-search-bar input + .search-btn {
 	transform: translateY(1px);
 }
 
@@ -127,14 +123,11 @@ input {
 	body, input {
 		color: #f1f1f1;
 	}
-	body {
-		background: #171717;
-	}
 	.special-search-bar input {
 		box-shadow: 0 0 0 0.4em #f1f1f1 inset;
 	}
-	.special-search-bar input:hover,
-	.special-search-bar input:valid {
+	.special-search-bar input,
+	.special-search-bar input {
 		background: #3d3d3d;
 		box-shadow: 0 0 0 0.1em #3d3d3d inset;
 	}
