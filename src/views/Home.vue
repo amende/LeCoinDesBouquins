@@ -5,7 +5,7 @@
   </div>
   <div class="slogan">
     <b-img :src="background_title" fluid></b-img>
-    <h2>Découvrez de nouveaux livres, partagez les votres !</h2>
+    <h2>Découvrez de nouveaux livres, partagez les vôtres !</h2>
   </div>
   <div class="book-search">
     <div>
