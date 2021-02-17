@@ -6,7 +6,7 @@
 </template>
 
 <script>
-import navbar from '@/components/main-menu/navbar'
+import navbar from '@/components/custom/main-menu/navbar'
 
 export default {
   name: 'App',
@@ -17,7 +17,7 @@ export default {
 </script>
 
 <style>
-@import './styles/common.css';
-@import './styles/home.css';
-@import './styles/fun/search_bar.css';
+@import '/assets/styles/common.css';
+@import '/assets/styles/home.css';
+@import '/assets/styles/fun/search_bar.css';
 </style>
