@@ -4,7 +4,7 @@
                v-model="model"
                v-bind="$attrs"
                v-on="$listeners">
-        <span class="custom-toggle-slider rounded-circle"></span>
+        <span class="custom-toggle-slider"></span>
     </label>
 </template>
 <script>

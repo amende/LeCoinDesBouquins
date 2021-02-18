@@ -9,7 +9,8 @@
 
 :root {
     --theme-dark-blue: #00203FFF;
-    --theme-green: #ADEFD1FF;
+    --theme-green: green;
+    --theme-light-green:#ADEFD1FF;
 }
 #main-navbar {
     background-color: var(--theme-dark-blue);
@@ -48,4 +49,28 @@
 
 .container {
     max-width: 90%;
+}
+
+.bg-primary {
+    background-color: var(--theme-dark-blue) !important;
+}
+
+.bg-secondary {
+    background-color: var(--theme-green) !important;
+}
+
+.bg-white {
+    background-color: white !important;
+}
+
+.input-group .form-control:not(:first-child) {
+    padding-left: 5px;
+}
+
+.base-switch-label {
+    padding-left: 10px;
+}
+
+.pt-lg-md, .py-lg-md {
+    padding-top: 0rem !important;
 }

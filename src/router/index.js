@@ -4,6 +4,7 @@ import Home from '@/views/Home'
 import test from '@/views/test'
 import inscription from '@/views/inscription'
 import connexion from '@/views/connexion'
+import bookCreate from '@/views/book/create'
 import Profile from '@/views/argon/Profile'
 
 Vue.use(Router)
@@ -34,6 +35,11 @@ export default new Router({
       path: '/connexion',
       name: 'connexion',
       component: connexion
+    },
+    {
+      path: '/book/create',
+      name: 'partager',
+      component: bookCreate
     }
   ]
 })

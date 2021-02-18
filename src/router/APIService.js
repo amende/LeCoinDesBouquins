@@ -9,4 +9,12 @@ export class APIService {
     const url = `${API_URL}/api/register`
     return axios.post(url, data)
   }
+
+  // book methods
+  createBook (data) {
+    const url = `${API_URL}/api/book`
+    axios.post(url, data).then(function (res) {
+      window.location = '/'
+    })
+  }
 }

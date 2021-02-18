@@ -8,7 +8,7 @@ var User = function (user) {
 
 User.register = function (newUser, result) {
   sql.query(
-    'INSERT INTO USER set ?', newUser, function (err, res) {
+    'INSERT INTO user set ?', newUser, function (err, res) {
       if (err) {
         console.log('error in register model: ', err)
         result(null, res.insertId)

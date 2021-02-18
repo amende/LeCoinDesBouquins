@@ -39,12 +39,7 @@
                                     </icon>
                                     <h6 class="text-primary text-uppercase">Partager un livre</h6>
                                     <p class="description mt-3">Partager un livre est l'occasion de partager votre passion et d'échanger.</p>
-                                    <div>
-                                        <badge type="primary" rounded>design</badge>
-                                        <badge type="primary" rounded>system</badge>
-                                        <badge type="primary" rounded>creative</badge>
-                                    </div>
-                                    <base-button tag="a" href="#" type="primary" class="mt-4">
+                                    <base-button tag="a" href="#/book/create" type="primary" class="mt-4">
                                         Partager un livre
                                     </base-button>
                                 </card>
@@ -55,11 +50,6 @@
                                     </icon>
                                     <h6 class="text-success text-uppercase">Chercher un livre</h6>
                                     <p class="description mt-3">Cliquez ici pour trouver les différents livres que vous pouvez emprunter !</p>
-                                    <div>
-                                        <badge type="success" rounded>business</badge>
-                                        <badge type="success" rounded>vision</badge>
-                                        <badge type="success" rounded>success</badge>
-                                    </div>
                                     <base-button tag="a" href="#" type="success" class="mt-4">
                                         Chercher un livre
                                     </base-button>
@@ -71,11 +61,6 @@
                                     </icon>
                                     <h6 class="text-warning text-uppercase">Rejoindre notre communauté de lecteurs</h6>
                                     <p class="description mt-3">Rejoignez nos communautés de lecteurs et étendez vos horizons de lecture !</p>
-                                    <div>
-                                        <badge type="warning" rounded>marketing</badge>
-                                        <badge type="warning" rounded>product</badge>
-                                        <badge type="warning" rounded>launch</badge>
-                                    </div>
                                     <base-button tag="a" href="#" type="warning" class="mt-4">
                                         Rejoindre la communauté
                                     </base-button>

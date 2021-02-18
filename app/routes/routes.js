@@ -1,5 +1,6 @@
 module.exports = function (app) {
   var user = require('../controllers/UserController')
+  var book = require('../controllers/BookController')
 
   // User Routes
   app.route('/api/register')
@@ -11,4 +12,8 @@ module.exports = function (app) {
     .put(user.login)
     .delete(user.delete_user)
   */
+
+  // Book Routes
+  app.route('/api/book')
+    .post(book.create)
 }
