@@ -50,7 +50,7 @@
                                     </icon>
                                     <h6 class="text-success text-uppercase">Chercher un livre</h6>
                                     <p class="description mt-3">Cliquez ici pour trouver les différents livres que vous pouvez emprunter !</p>
-                                    <base-button tag="a" href="#" type="success" class="mt-4">
+                                    <base-button tag="a" href="#/book" type="success" class="mt-4">
                                         Chercher un livre
                                     </base-button>
                                 </card>

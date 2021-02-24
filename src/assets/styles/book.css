@@ -1,0 +1,8 @@
+.book-search .card-body {
+    padding: 1rem !important;
+}
+
+.book-search .mb-4, .book-search .mt-4, .book-search .my-4 {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+}

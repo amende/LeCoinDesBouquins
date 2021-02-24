@@ -10,3 +10,12 @@ exports.create = function (req, res) {
     res.json(book)
   })
 }
+
+exports.search = function (req, res) {
+  Book.search(req.query, function (err, bookList) {
+    if (err) {
+      res.send(err)
+    }
+    res.json(bookList)
+  })
+}

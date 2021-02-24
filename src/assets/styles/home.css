@@ -22,31 +22,6 @@
     transform: translate(-50%, -50%);
 }
 
-.book-search {
-    background-color: green;
-    padding: 30px;
-    width: 90%;
-    margin: auto;
-    margin-top: -100px;
-    padding-bottom: 10px;
-    padding-top: 10px;
-}
-
-.book-search .btn-success {
-    background-color: var(--theme-dark-blue);
-    border-color: var(--theme-dark-blue);
-    margin-right: 15px;
-}
-
-.book-search .search-fields {
-    display: flex;
-    width: 100%;
-}
-
-.book-search form {
-    width: 100%;
-}
-
 .home .multiselect {
     display: inline-block !important;
     width: 40% !important;

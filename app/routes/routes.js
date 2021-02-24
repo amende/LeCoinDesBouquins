@@ -15,5 +15,6 @@ module.exports = function (app) {
 
   // Book Routes
   app.route('/api/book')
+    .get(book.search)
     .post(book.create)
 }

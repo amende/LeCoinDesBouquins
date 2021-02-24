@@ -21,3 +21,4 @@ export default {
 @import '/assets/styles/home.css';
 @import '/assets/styles/fun/search_bar.css';
 </style>
+<style src="vue-multiselect/dist/vue-multiselect.min.css"></style>

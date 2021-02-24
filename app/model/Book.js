@@ -13,11 +13,25 @@ Book.create = function (newBook, result) {
   sql.query(
     'INSERT INTO book set ?', newBook, function (err, res) {
       if (err) {
-        console.log('error in register model: ', err)
+        console.log('error in create book model: ', err)
         result(null, res.insertId)
       } else {
         console.log(res.insertId)
         result(null, res.insertId)
+      }
+    }
+  )
+}
+
+Book.search = function (query, result) {
+  sql.query(
+    'SELECT * FROM book', function (err, res) {
+      if (err) {
+        console.log('error in search book model: ', err)
+        result(null, res)
+      } else {
+        console.log(res)
+        result(null, res)
       }
     }
   )
