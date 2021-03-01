@@ -17,4 +17,5 @@ module.exports = function (app) {
   app.route('/api/book')
     .get(book.search)
     .post(book.create)
+  app.get('/api/book/:bokId', book.getDetail)
 }

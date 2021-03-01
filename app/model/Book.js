@@ -37,4 +37,18 @@ Book.search = function (query, result) {
   )
 }
 
+Book.getDetail = function (params, result) {
+  sql.query(
+    `SELECT * FROM book WHERE bok_id = ${params.bokId}`, function (err, res) {
+      if (err) {
+        console.log('error in getting details of book model: ', err)
+        result(null, res)
+      } else {
+        console.log(res)
+        result(null, res)
+      }
+    }
+  )
+}
+
 module.exports = Book

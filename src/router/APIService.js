@@ -25,14 +25,16 @@ export class APIService {
   // book methods
   createBook (data) {
     const url = `${API_URL}/api/book`
-    axios.post(url, data).then(function (res) {
-      window.location = '/'
-    })
+    axios.post(url, data).then(function (res) { window.location = '/' })
   }
   searchBook (data) {
     const url = `${API_URL}/api/book`
     var search = this.formatSearch(data)
     const request = axios.get(url + search)
     return request.then(result => { return result.data })
+  }
+  getBook (bokId) {
+    const url = `${API_URL}/api/book/` + bokId
+    return axios.get(url)
   }
 }

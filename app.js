@@ -10,7 +10,7 @@ app.use(bodyParser.json());
 app.use(cors());
 
 app.listen(port, () => {
-  console.log(`Example app listening at http://localhost:${port}`)
+  console.log(`Le Coin Bouquin tourne sur http://localhost:${port}`)
 });
 
 routes(app); //register the routes

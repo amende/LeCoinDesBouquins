@@ -465,6 +465,11 @@
 <script>
 export default {
   name: 'Home',
+  methods: {
+    redirectTo: function (endUrl) {
+      location.href = '#/' + endUrl
+    }
+  },
   components: {}
 }
 </script>

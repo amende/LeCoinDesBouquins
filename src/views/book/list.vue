@@ -50,7 +50,7 @@
                 <div class="row justify-content-center">
                     <div class="col-lg-12">
                         <div class="row row-grid">
-                            <div class="col-lg-4" v-for="(book, index) in books" v-bind:key="index">
+                            <div class="col-lg-4" v-for="(book, index) in books" v-bind:key="index" v-on:click="goToBookDetail(book.bok_id)">
                                 <card class="border-0  pointer-cursor" hover shadow body-classes="py-5">
                                     <h6 class="text-primary text-uppercase">{{ book.title }}</h6>
                                     <p class="description mt-3">{{ book.description }}</p>
@@ -87,6 +87,9 @@ export default {
   methods: {
     search () {
       apiService.searchBook(this.form).then(result => { this.books = result })
+    },
+    goToBookDetail (bokId) {
+      window.location = '#/book/' + bokId
     }
   }
 }

@@ -19,3 +19,12 @@ exports.search = function (req, res) {
     res.json(bookList)
   })
 }
+
+exports.getDetail = function (req, res) {
+  Book.getDetail(req.params, function (err, bookDetail) {
+    if (err) {
+      res.send(err)
+    }
+    res.json(bookDetail)
+  })
+}
